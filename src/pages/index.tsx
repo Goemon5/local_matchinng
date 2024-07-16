@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import Card from "/Users/takeuchidaiki/local_matchinng/src/components/card/Card.tsx";
-import Header from "/Users/takeuchidaiki/local_matchinng/src/components/Layout/Header.tsx";
+import Card from "../components/card/Card";
+import Header from "../components/Layout/Header";
 
 export function Home() {
   return (
@@ -15,3 +16,4 @@ export function Home() {
     </>
   );
 }
+export default Home;
