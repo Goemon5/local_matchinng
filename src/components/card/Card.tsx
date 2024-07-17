@@ -8,6 +8,7 @@ interface Post {
   gender: string;
   title: string;
   contents: string;
+  reward: string;
 }
 
 const Card = () => {
@@ -43,8 +44,8 @@ const Card = () => {
             style={{ width: "50%" }}
           >
             <div className={styles.postCard}>
-              <h2 className={styles.postTitle}>{post.title}</h2>
-              <p className={styles.postSnippet}>{post.contents}</p>
+              <h2 className={styles.postTitle}>{post.contents}</h2>
+              <p className={styles.postSnippet}>{post.reward}</p>
               <p className={styles.postMeta}>{post.name}</p>
               <Button onClick={() => handleShowModal(post)}>
                 Show Details
@@ -64,10 +65,10 @@ const Card = () => {
                   <strong>名前:</strong> {selectedPost.name}
                 </p>
                 <p>
-                  <strong>タイトル:</strong> {selectedPost.title}
+                  <strong>内容:</strong> {selectedPost.contents}
                 </p>
                 <p>
-                  <strong>内容:</strong> {selectedPost.contents}
+                  <strong>報酬:</strong> {selectedPost.reward}
                 </p>
               </>
             )}

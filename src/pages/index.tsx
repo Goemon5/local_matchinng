@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Card from "../components/card/Card";
 import Header from "../components/Layout/Header";
+import Post from "../components/post/Post";
 
 export function Home() {
   return (
@@ -13,6 +14,7 @@ export function Home() {
       </Head>
       <Header />
       <Card />
+      <Post />
     </>
   );
 }
